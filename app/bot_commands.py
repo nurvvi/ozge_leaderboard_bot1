@@ -13,6 +13,7 @@ from aiogram.types import (
     BotCommandScopeAllPrivateChats,
     BotCommandScopeChat,
     BotCommandScopeChatAdministrators,
+    BotCommandScopeDefault,
 )
 
 log = logging.getLogger(__name__)
