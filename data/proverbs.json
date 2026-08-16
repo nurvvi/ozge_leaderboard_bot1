@@ -83,5 +83,133 @@
     "retrieved_at": "2026-08-04",
     "verified": true,
     "active": true
+  },
+  {
+    "id": "oku-bilim-bulagy",
+    "kk": "Мақалды жалғастыр: «Оқу — білім бұлағы, білім — …»",
+    "ru": "Продолжи пословицу: «Учёба — источник знаний, знания — …»",
+    "answer": "өмір шырағы",
+    "accepted_answers": ["өмір шырағы", "Оқу — білім бұлағы, білім — өмір шырағы"],
+    "options_kk": ["өмір шырағы", "елдің байлығы", "жастың серігі"],
+    "options_ru": ["светоч жизни", "богатство народа", "спутник молодости"],
+    "correct_index": 0,
+    "explanation_ru": "Пословица говорит, что знания освещают человеку путь в жизни.",
+    "source_title": "Оқу — білім бұлағы, Білім — өмір шырағы",
+    "source_url": "https://maqal.kz/maqal/oku-bilim-bulagy-bilim-omir-shyragy/",
+    "publisher": "Maqal.kz",
+    "retrieved_at": "2026-08-16",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "bilekti-birdi-zhygar",
+    "kk": "Мақалды жалғастыр: «Білекті бірді жығар, білімді — …»",
+    "ru": "Продолжи пословицу: «Сильный победит одного, а знающий — …»",
+    "answer": "мыңды жығар",
+    "accepted_answers": ["мыңды жығар", "Білекті бірді жығар, білімді мыңды жығар"],
+    "options_kk": ["елді бастар", "мыңды жығар", "жолды табар"],
+    "options_ru": ["поведёт народ", "победит тысячу", "найдёт дорогу"],
+    "correct_index": 1,
+    "explanation_ru": "Знания и ум ценнее одной только физической силы.",
+    "source_title": "Білекті бірді жығар, Білімді мыңды жығар",
+    "source_url": "https://maqal.kz/maqal/bilekti-birdi-zhygar-bilimdi-myndy-zhygar/",
+    "publisher": "Maqal.kz",
+    "retrieved_at": "2026-08-16",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "zheti-ret-olshep",
+    "kk": "Мақалды жалғастыр: «Жеті рет өлшеп, …»",
+    "ru": "Продолжи пословицу: «Семь раз отмерь, …»",
+    "answer": "бір рет кес",
+    "accepted_answers": ["бір рет кес", "Жеті рет өлшеп, бір рет кес"],
+    "options_kk": ["жолға шық", "бір рет кес", "елге айт"],
+    "options_ru": ["отправься в путь", "один раз отрежь", "скажи народу"],
+    "correct_index": 1,
+    "explanation_ru": "Прежде чем действовать, следует тщательно всё обдумать и проверить.",
+    "source_title": "Ел алғысына бөленіп жүрген оташы",
+    "source_url": "https://www.gov.kz/memleket/entities/zhambyl-densaulyk/press/news/details/214914",
+    "publisher": "GOV.KZ",
+    "retrieved_at": "2026-08-16",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "ata-korgen-oq-jonar",
+    "kk": "Мақалды жалғастыр: «Ата көрген оқ жонар, ана көрген — …»",
+    "ru": "Продолжи пословицу: «Видевший пример отца точит стрелу, а видевшая пример матери — …»",
+    "answer": "тон пішер",
+    "accepted_answers": ["тон пішер", "Ата көрген оқ жонар, ана көрген тон пішер"],
+    "options_kk": ["үй тігеді", "ел бастар", "тон пішер"],
+    "options_ru": ["ставит юрту", "ведёт народ", "кроит одежду"],
+    "correct_index": 2,
+    "explanation_ru": "Пословица подчёркивает роль семейного примера в воспитании и передаче навыков.",
+    "source_title": "Ата көрген оқ жонар, ана көрген тон пішер",
+    "source_url": "https://qazaqstan.tv/news/30245",
+    "publisher": "Qazaqstan ұлттық телеарнасы",
+    "retrieved_at": "2026-08-16",
+    "verified": true,
+    "active": true
+  },
+  {
+    "id": "oner-aldymen-qyzyl-til", "kk": "Мақалды жалғастыр: «Өнер алды — …»", "ru": "Продолжи пословицу: «Первое из искусств — …»", "answer": "қызыл тіл", "accepted_answers": ["қызыл тіл", "Өнер алды қызыл тіл"], "options_kk": ["қызыл тіл", "ақыл-білім", "адал еңбек"], "options_ru": ["красноречие", "ум и знания", "честный труд"], "correct_index": 0, "explanation_ru": "Красноречие и умение выразить мысль высоко ценятся в традиции.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "til-tas-zharady", "kk": "Мақалды жалғастыр: «Тіл тас жарады, тас жармаса — …»", "ru": "Продолжи пословицу: «Язык камень расколет, а не расколет камень — …»", "answer": "бас жарады", "accepted_answers": ["бас жарады", "Тіл тас жарады, тас жармаса бас жарады"], "options_kk": ["ел табады", "бас жарады", "жол ашады"], "options_ru": ["найдёт народ", "ранит голову", "откроет путь"], "correct_index": 1, "explanation_ru": "Слова могут иметь очень сильное, в том числе болезненное, воздействие.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "aqyl-zastan-asyl-tastan", "kk": "Мақалды жалғастыр: «Ақыл жастан, асыл — …»", "ru": "Продолжи пословицу: «Ум — от молодых, драгоценность — …»", "answer": "тастан", "accepted_answers": ["тастан", "Ақыл жастан, асыл тастан"], "options_kk": ["елден", "тастан", "сөзден"], "options_ru": ["от народа", "из камня", "из слова"], "correct_index": 1, "explanation_ru": "Мудрость не зависит только от возраста, а ценность может быть скрыта в простом.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "birlik-bolmay-tirlik-bolmas", "kk": "Мақалды жалғастыр: «Бірлік болмай — …»", "ru": "Продолжи пословицу: «Без единства не будет …»", "answer": "тірлік болмас", "accepted_answers": ["тірлік болмас", "Бірлік болмай тірлік болмас"], "options_kk": ["ел болмас", "тірлік болмас", "жол болмас"], "options_ru": ["не будет народа", "не будет жизни", "не будет пути"], "correct_index": 1, "explanation_ru": "Единство считается необходимым условием благополучной жизни общества.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "erinbegen-enbek", "kk": "Мақалды жалғастыр: «Ерінбеген еңбек етсе, …»", "ru": "Продолжи пословицу: «Если не лениться трудиться, …»", "answer": "тояды қарның тіленбей", "accepted_answers": ["тояды қарның тіленбей", "Ерінбеген еңбек етсе, тояды қарның тіленбей"], "options_kk": ["елге сыйлы болар", "тояды қарның тіленбей", "жолы ашылар"], "options_ru": ["будешь уважаем", "насытишься, не прося", "откроется путь"], "correct_index": 1, "explanation_ru": "Трудолюбие позволяет человеку обеспечивать себя самостоятельно.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "deni-saudyn-zhany-sau", "kk": "Мақалды жалғастыр: «Дені саудың — …»", "ru": "Продолжи пословицу: «У здорового тела — …»", "answer": "жаны сау", "accepted_answers": ["жаны сау", "Дені саудың жаны сау"], "options_kk": ["жаны сау", "ойы бай", "жолы ашық"], "options_ru": ["здоровая душа", "богатые мысли", "открытый путь"], "correct_index": 0, "explanation_ru": "Здоровье тела связывается с душевным благополучием.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "as-adamnyng-arqauy", "kk": "Мақалды жалғастыр: «Ас — адамның …»", "ru": "Продолжи пословицу: «Еда — … человека»", "answer": "арқауы", "accepted_answers": ["арқауы", "Ас адамның арқауы"], "options_kk": ["қуаты", "арқауы", "байлығы"], "options_ru": ["сила", "основа", "богатство"], "correct_index": 1, "explanation_ru": "Пища необходима человеку как основа жизненных сил.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "su-ishken-qudyq", "kk": "Мақалды жалғастыр: «Су ішкен құдығыңа — …»", "ru": "Продолжи пословицу: «Не … в колодец, из которого пил воду»", "answer": "түкірме", "accepted_answers": ["түкірме", "Су ішкен құдығыңа түкірме"], "options_kk": ["тас атпа", "түкірме", "жақындама"], "options_ru": ["не бросай камень", "не плюй", "не подходи"], "correct_index": 1, "explanation_ru": "Нельзя вредить тому, от кого получил пользу или поддержку.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "uly-sozde-ulyq-zhok", "kk": "Мақалды жалғастыр: «Үлкен сөзде — …»", "ru": "Продолжи пословицу: «В словах старшего нет …»", "answer": "ұят жоқ", "accepted_answers": ["ұят жоқ", "Үлкен сөзде ұят жоқ"], "options_kk": ["ұят жоқ", "дау жоқ", "жол жоқ"], "options_ru": ["стыда", "спора", "пути"], "correct_index": 0, "explanation_ru": "Обращение к старшему с просьбой или важным словом не считается постыдным.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "oneli-bala-arly-bala", "kk": "Мақалды жалғастыр: «Өнерлі бала — …»", "ru": "Продолжи пословицу: «Умелый ребёнок — …»", "answer": "арлы бала", "accepted_answers": ["арлы бала", "Өнерлі бала арлы бала"], "options_kk": ["елді бала", "арлы бала", "сәнді бала"], "options_ru": ["народный ребёнок", "совестливый ребёнок", "нарядный ребёнок"], "correct_index": 1, "explanation_ru": "Умение и воспитанность рассматриваются как связанные качества.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "kishi-bolsan-kisi-bolasyng", "kk": "Мақалды жалғастыр: «Кіші болсаң — …»", "ru": "Продолжи пословицу: «Будешь скромным — …»", "answer": "кісі боласың", "accepted_answers": ["кісі боласың", "Кіші болсаң кісі боласың"], "options_kk": ["кісі боласың", "биік боласың", "бай боласың"], "options_ru": ["станешь человеком", "станешь высоким", "станешь богатым"], "correct_index": 0, "explanation_ru": "Скромность и уважение к другим считаются признаком достойного человека.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "qonaq-kelse-qut", "kk": "Мақалды жалғастыр: «Қонақ келсе — …»", "ru": "Продолжи пословицу: «Гость пришёл — …»", "answer": "құт", "accepted_answers": ["құт", "Қонақ келсе құт"], "options_kk": ["той", "құт", "дау"], "options_ru": ["праздник", "благодать", "спор"], "correct_index": 1, "explanation_ru": "Гостя традиционно воспринимают как того, кто приносит в дом благополучие.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "qonaq-az-otsa-qoy-soyar", "kk": "Мақалды жалғастыр: «Қонақ аз отырып, …»", "ru": "Продолжи пословицу: «Гость ненадолго заходит, …»", "answer": "қой сояр", "accepted_answers": ["қой сояр", "Қонақ аз отырып, қой сояр"], "options_kk": ["той қылар", "қой сояр", "ел аралар"], "options_ru": ["устроит праздник", "зарежет барана", "обойдёт народ"], "correct_index": 1, "explanation_ru": "Гостеприимство предполагает щедрое угощение даже для ненадолго пришедшего гостя.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "zhaksy-zholdas-zharym-yrys", "kk": "Мақалды жалғастыр: «Жақсы жолдас — …»", "ru": "Продолжи пословицу: «Хороший товарищ — …»", "answer": "жарым ырыс", "accepted_answers": ["жарым ырыс", "Жақсы жолдас жарым ырыс"], "options_kk": ["жарым ырыс", "алыс туыс", "үлкен сын"], "options_ru": ["половина благополучия", "далёкий родственник", "большое испытание"], "correct_index": 0, "explanation_ru": "Надёжный спутник в пути и жизни очень ценен.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "el-ishi-altyn-besik", "kk": "Мақалды жалғастыр: «Ел іші — …»", "ru": "Продолжи пословицу: «Свой народ — …»", "answer": "алтын бесік", "accepted_answers": ["алтын бесік", "Ел іші алтын бесік"], "options_kk": ["алтын бесік", "биік белес", "кең дала"], "options_ru": ["золотая колыбель", "высокая вершина", "широкая степь"], "correct_index": 0, "explanation_ru": "Родное общество и земля воспринимаются как надёжная опора человека.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "eldeshen-er-bolmas", "kk": "Мақалды жалғастыр: «Елдескен ер болмас, …»", "ru": "Продолжи пословицу: «Не будет мужчиной тот, кто в ссоре с народом, …»", "answer": "жердескен жер болмас", "accepted_answers": ["жердескен жер болмас", "Елдескен ер болмас, жердескен жер болмас"], "options_kk": ["досы көп болмас", "жердескен жер болмас", "жолы кең болмас"], "options_ru": ["не будет много друзей", "не будет землёй место в раздоре", "не будет широкого пути"], "correct_index": 1, "explanation_ru": "Пословица предостерегает от вражды со своим окружением и родной землёй.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "bir-kun-tuz-tatqan", "kk": "Мақалды жалғастыр: «Бір күн тұз татқан жерге — …»", "ru": "Продолжи пословицу: «Месту, где однажды вкусил соль, …»", "answer": "қырық күн сәлем", "accepted_answers": ["қырық күн сәлем", "Бір күн тұз татқан жерге қырық күн сәлем"], "options_kk": ["қырық күн сәлем", "қайта барма", "малын бақ"], "options_ru": ["привет сорок дней", "не возвращайся", "паси скот"], "correct_index": 0, "explanation_ru": "Даже за малое гостеприимство следует сохранять благодарность и уважение.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "zheti-zhurttyn-tilin-bil", "kk": "Мақалды жалғастыр: «Жеті жұрттың тілін біл, …»", "ru": "Продолжи пословицу: «Знай языки семи народов, …»", "answer": "жеті түрлі білім біл", "accepted_answers": ["жеті түрлі білім біл", "Жеті жұрттың тілін біл, жеті түрлі білім біл"], "options_kk": ["еліңді ұмытпа", "жеті түрлі білім біл", "жолыңды тап"], "options_ru": ["не забывай родину", "знай семь разных наук", "найди свой путь"], "correct_index": 1, "explanation_ru": "Пословица призывает расширять кругозор через языки и разные области знания.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "zher-baylygy-el-baylygy", "kk": "Мақалды жалғастыр: «Жер байлығы — …»", "ru": "Продолжи пословицу: «Богатство земли — …»", "answer": "ел байлығы", "accepted_answers": ["ел байлығы", "Жер байлығы ел байлығы"], "options_kk": ["мал байлығы", "ел байлығы", "тау байлығы"], "options_ru": ["богатство скота", "богатство народа", "богатство гор"], "correct_index": 1, "explanation_ru": "Природные богатства земли рассматриваются как общее достояние народа.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
+  },
+  {
+    "id": "talaptyga-nur-zhauar", "kk": "Мақалды жалғастыр: «Талаптыға — …»", "ru": "Продолжи пословицу: «На стремящегося к цели …»", "answer": "нұр жауар", "accepted_answers": ["нұр жауар", "Талаптыға нұр жауар"], "options_kk": ["ел қарар", "нұр жауар", "құс қонар"], "options_ru": ["посмотрит народ", "прольётся свет", "сядет птица"], "correct_index": 1, "explanation_ru": "Усердие и стремление к цели связываются с хорошим результатом.", "source_title": "Бабалар сөзі. 66-том", "source_url": "https://litart.kz/wp-content/uploads/babasoz/babasoz66.pdf", "publisher": "Әдебиет әлемі", "retrieved_at": "2026-08-16", "verified": true, "active": true
   }
 ]
