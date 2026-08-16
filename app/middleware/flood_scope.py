@@ -26,6 +26,14 @@ class FloodScopeMiddleware(BaseMiddleware):
                 if event.from_user and event.from_user.id in settings.admin_ids:
                     return await handler(event, data)
                 return None
+            # Allow administrators to discover a chat/topic ID before adding it
+            # to the restricted flood scope.
+            if (
+                event.from_user
+                and event.from_user.id in settings.admin_ids
+                and (event.text or "").split("@", 1)[0] == "/where"
+            ):
+                return await handler(event, data)
             if not in_flood_scope(event.chat.id, event.message_thread_id, settings):
                 return None
 
