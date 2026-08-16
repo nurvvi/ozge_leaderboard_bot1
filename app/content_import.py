@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from app.database import connect
+from app.migrations import migrate
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 GAME_FILES = ("proverbs.json", "facts.json", "quiz_questions.json")
@@ -52,7 +53,10 @@ def to_questions(filename: str, entry: dict) -> list[dict]:
     return [{**base, "external_id": f"sourced:{game_type}:{entry['id']}", "game_type": game_type} for game_type in types]
 
 
-async def import_content(db_path: str | Path, data_dir: Path = DATA_DIR) -> dict[str, int]:
+async def import_content(db_path: str | Path, data_dir: Path = DATA_DIR, legacy_db_path: str | Path | None = None) -> dict[str, int]:
+    # Ensure database schema is initialized before importing
+    await migrate(db_path, legacy_db_path)
+
     counts = {"questions": 0, "tasks": 0, "rejected": 0}
     async with connect(db_path) as db:
         for filename in GAME_FILES:
@@ -80,8 +84,9 @@ async def _main() -> None:
     parser = argparse.ArgumentParser(description="Validate and import locally reviewed game content")
     parser.add_argument("--db", default="activity_bot.db")
     parser.add_argument("--data-dir", type=Path, default=DATA_DIR)
+    parser.add_argument("--legacy-db", type=Path, default=None, help="Optional legacy database to import from")
     args = parser.parse_args()
-    print(await import_content(args.db, args.data_dir))
+    print(await import_content(args.db, args.data_dir, args.legacy_db))
 
 
 if __name__ == "__main__":
