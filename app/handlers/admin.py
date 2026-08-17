@@ -11,9 +11,29 @@ from app.config import Settings, telegram_thread_id
 from app.keyboards import question_keyboard
 from app.services.games import cancel_game, mark_game_sent, start_game
 from app.services.rewards import award_ozgecoins
-from app.services.users import get_profile
+from app.services.users import get_profile, get_profile_by_username
 
 router = Router()
+
+
+# Snapshot of the leaderboard before the Railway database was replaced.
+# Usernames are stored without @ because Telegram sends them that way.
+RESTORE_LEADERBOARD = {
+    "sdkvais": 127,
+    "nurkhat1357": 77,
+    "thesonofqazaq": 66,
+    "uraim8": 55,
+    "ganglerost": 47,
+    "jnsyslm": 45,
+    "dsbblll": 21,
+    "popipopano": 18,
+    "yeonienonie": 15,
+    "rxanvxzz": 14,
+    "akzvorzakon": 13,
+    "nnurkass": 12,
+    "nurvvi": 9,
+    "meirzhan_ayazkhanov": 6,
+}
 
 
 def allowed(message: Message, settings: Settings) -> bool:
@@ -30,7 +50,7 @@ async def deny(message: Message, settings: Settings) -> bool:
 @router.message(Command("admin"))
 async def admin(message: Message, settings: Settings) -> None:
     if await deny(message, settings): return
-    await message.answer("🛠 <b>Әкімші мәзірі</b>\n\n<b>Admin menu</b>\n\n/award telegram_id amount reason\n/deduct telegram_id amount reason\n/reset_points telegram_id reason\n/user_info telegram_id\n/cancel_game\n/start_game game_type", parse_mode=ParseMode.HTML)
+    await message.answer("🛠 <b>Әкімші мәзірі</b>\n\n<b>Admin menu</b>\n\n/award telegram_id amount reason\n/deduct telegram_id amount reason\n/reset_points telegram_id reason\n/user_info telegram_id\n/restore_leaderboard\n/cancel_game\n/start_game game_type", parse_mode=ParseMode.HTML)
 
 
 @router.message(Command("start_game"))
@@ -106,6 +126,46 @@ async def user_info(message: Message, db_path: str, settings: Settings) -> None:
     except (ValueError, IndexError): await message.answer("/user_info telegram_id"); return
     row = await get_profile(db_path, telegram_id)
     await message.answer("Пайдаланушы табылмады.\n\nПользователь не найден." if not row else f"telegram_id={telegram_id}\nÖZGEcoins={row['ozgecoins']}")
+
+
+@router.message(Command("restore_leaderboard"))
+async def restore_leaderboard(message: Message, db_path: str, settings: Settings) -> None:
+    """Restore the known balances once, for users already seen by the bot."""
+    if await deny(message, settings): return
+    restored: list[str] = []
+    missing: list[str] = []
+    unchanged: list[str] = []
+    for username, target_balance in RESTORE_LEADERBOARD.items():
+        row = await get_profile_by_username(db_path, username)
+        if not row:
+            missing.append("@" + username)
+            continue
+        current_balance = int(row["ozgecoins"])
+        adjustment = target_balance - current_balance
+        if not adjustment:
+            unchanged.append("@" + username)
+            continue
+        result = await award_ozgecoins(
+            db_path,
+            int(row["telegram_id"]),
+            adjustment,
+            "leaderboard_restore",
+            "Restore leaderboard after database loss",
+            admin_id=message.from_user.id,
+            unique_key=f"leaderboard_restore:{username}",
+        )
+        if result.awarded:
+            restored.append(f"@{username} — {result.new_balance}")
+        else:
+            unchanged.append("@" + username)
+    lines = ["✅ Лидерборд восстановлен для доступных участников."]
+    if restored:
+        lines.append("\nВосстановлены:\n" + "\n".join(restored))
+    if unchanged:
+        lines.append("\nУже были восстановлены:\n" + ", ".join(unchanged))
+    if missing:
+        lines.append("\nЕщё не найдены (пусть напишут любое сообщение в FLOOD, затем запустите команду снова):\n" + ", ".join(missing))
+    await message.answer("\n".join(lines))
 
 
 @router.message(Command("cancel_game"))

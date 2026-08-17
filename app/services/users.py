@@ -21,6 +21,17 @@ async def get_profile(db_path: str | Path, user_id: int) -> dict | None:
         return dict(row) if row else None
 
 
+async def get_profile_by_username(db_path: str | Path, username: str) -> dict | None:
+    """Return the most recently known user record for a Telegram username."""
+    normalized = username.removeprefix("@").lower()
+    async with connect(db_path) as db:
+        row = await (await db.execute(
+            "SELECT * FROM users WHERE lower(username)=? ORDER BY updated_at DESC LIMIT 1",
+            (normalized,),
+        )).fetchone()
+        return dict(row) if row else None
+
+
 async def upsert_user(db_path: str | Path, telegram_id: int, username: str | None, first_name: str) -> None:
     async with connect(db_path) as db:
         await db.execute(
